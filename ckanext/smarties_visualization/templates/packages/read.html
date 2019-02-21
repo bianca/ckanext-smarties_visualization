@@ -1,0 +1,6 @@
+{% ckan_extends  %}
+
+{% block package_resources %}
+  {% snippet "package/snippets/summary.html", pkg=pkg, resources=pkg.resources %}
+  {{ super() }}
+{% endblock %}
